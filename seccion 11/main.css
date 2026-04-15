@@ -1,0 +1,89 @@
+/* .container {
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+    display: grid;
+    background: gray;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 15px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;  
+
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image:hover img {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.image:nth-child(1) {
+    background: red;
+    grid-column: 1 /2;
+    grid-row: 1 / 4;
+}
+
+.image:nth-child(2) {
+    grid-column:2 /4;
+    grid-row: 1 / 2;
+    background: red;
+}
+
+.image:nth-child(3) {
+    grid-column:4 /5;
+    grid-row: 2 /4;
+    background: red;
+}
+
+.image:nth-child(4) {
+    grid-column: 3 /4;
+    grid-row: 3 /4;
+    background: green;
+} */
+ .grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  background: white; /* لون الخلفية الفاتح */
+  /* تقسيم الشبكة إلى 3 أعمدة (العامود الأيمن والأوسط متساويان) و4 صفوف */
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
+  /* تسمية المناطق */
+  grid-template-areas:
+    "header  header  header"
+    "sidebar content1 content1"
+    "sidebar content2 content3"
+    "footer  footer  footer";
+  height: 100vh; /* أو أي ارتفاع تريده */
+}
+
+/* ربط كل عنصر بالمساحة المسماة */
+.header   { grid-area: header; background: green; }
+.sidebar  { grid-area: sidebar; background: green; }
+.content1 { grid-area: content1; background: green; }
+.content2 { grid-area: content2; background: green; }
+.content3 { grid-area: content3; background: green; }
+.footer   { grid-area: footer; background: green; }
+
+/* تنسيق عام للعناصر */
+.header, .sidebar, .content1, .content2, .content3, .footer {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
