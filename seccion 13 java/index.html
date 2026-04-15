@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <!-- <script async src="main.js"></script> -->
+</head>
+<body>
+    
+    <!-- 
+         =basics 2
+         = dom 1
+         = bom 1
+         = ajax xmlhttprequest 1
+         = oop 1
+         = ecma next fetch 1
+         = crud 1
+         = web components ,shadow dom 1
+    -->
+
+    <img  width="1500" height="700" src="photos/business-2.jpg" alt="bulb" id="photo">
+    <button id="changePhoto">next</button>
+    <img  src="photos/business-main-700x680.jpg">
+    
+    <script>
+        var btn = document.querySelector("#changePhoto");
+        var photo = document.querySelector("#photo");
+        btn.onclick = function() {
+            if(photo.src === "photos/business-2.jpg") {
+                photo.src = "photos/business-main-700x680.jpg";
+            } else {
+                photo.src = "photos/business-2.jpg";
+            }
+        }
+    </script>
+
+<!-- <input type="text" id="password" placeholder="Type something...">
+<button id="btn">Click Me</button>
+<div id="counter"></div> -->
+<!-- <textarea id="textarea" placeholder="Type something..."></textarea>
+<h5 >count is : <span id="result"></span></h5> -->
+
+<!-- concatenate -->
+<!-- <h5 >count is : <span id="result"></span></h5> -->
+
+    <script src="main.js">
+
+    </script>
+
+</body>
+</html>

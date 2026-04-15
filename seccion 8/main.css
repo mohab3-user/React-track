@@ -1,0 +1,19 @@
+.container{
+    width: 80%;
+    height: 350px;
+    margin: 100px auto;
+}
+.left, .right{
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+.left{
+    width: 37%;
+    float: left;
+
+}
+.right{
+    width: 58%;
+    float: right;
+}
