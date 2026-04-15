@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero {
+  background: url("business-2.jpg") rgba(0, 0, 0, 0.797);
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: color;
+  height: 100vh;
+
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  
+  /* z-index: 2; */
+}
+
+.logo {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  img{
+    width: 70%;
+    height:60%;
+    
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ddd;
+}
+
+.contact-btn {
+  background-color: white;
+  color: black !important;
+  padding: 6px 14px;
+  border-radius: 3px;
+  font-weight: bold;
+}
