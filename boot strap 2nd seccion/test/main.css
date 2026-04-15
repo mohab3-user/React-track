@@ -1,0 +1,14 @@
+/* قم بتعديل محاذاة العناصر داخل الـ navbar */
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between; /* توزيع العناصر على كامل العرض */
+  align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+}
+
+.navbar .navbar-brand {
+  order: 1; /* ترتيب العنصر ليكون في الجهة اليسرى */
+}
+
+.navbar .navbar-collapse {
+  order: 2; /* ترتيب باقي المحتويات في الجهة اليمنى */
+}
